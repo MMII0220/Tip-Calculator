@@ -15,7 +15,7 @@
     <main>
       <div class="container">
         <article class="tip-calculator">
-          <h2 class="suptitle">Tip Calculator</h2>
+          <h3 class="suptitle">Tip Calculator</h3>
 
           <article class="money-list">
             <p class="suptext">Bill Amount</p>
@@ -26,7 +26,7 @@
           </article>
 
           <article class="people-list">
-            <p class="suptext">Bill Amount</p>
+            <p class="suptext">Number of Guests</p>
             <div class="sign">
               <i class="fas fa-male"></i>
               <input class="people" type="number" name="people" />
@@ -34,14 +34,21 @@
           </article>
 
           <article class="percentage-list">
-            <p class="suptext">Bill Amount</p>
-            <input class="percentage" type="number" name="percentage" />
+            <p class="suptext">Service Quality</p>
+            <select class="percentage">
+              <option disabled="" selected="" value="0">Choose...</option>
+              <option value="0.3">30% - Outstanding</option>
+              <option value="0.2">20% - Good</option>
+              <option value="0.15">15% - It was ok</option>
+              <option value="0.1">10% - Bad</option>
+              <option value="0.05">5% - Terrible</option>
+            </select>
           </article>
-
+          <hr class="bottom-line" />
           <button class="calc">Calculate</button>
         </article>
       </div>
     </main>
-    <script src="./main.js"></script>
+    <script defer src="./main.js"></script>
   </body>
 </html>

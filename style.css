@@ -3,6 +3,7 @@
   box-sizing: border-box;
 }
 body {
+  font-size: 1rem;
   background: linear-gradient(to right, #f95ce2, #edca11);
 }
 .container {
@@ -17,7 +18,7 @@ body {
   border: 1px solid lightgray;
   background: whitesmoke;
   border-radius: 5px;
-  width: 400px;
+  width: 470px;
   margin: auto;
   padding: 0 25px;
   font-size: 1rem;
@@ -25,14 +26,18 @@ body {
   box-shadow: 0px 2px 4px 0px rgb(0 0 0 / 50%);
 }
 .suptitle {
-  margin: 20px 30px;
-  padding: 20px 10px;
+  margin: 20px auto;
+  padding: 10px;
   text-align: center;
   font-weight: bold;
   border-bottom: 2px solid rgba(211, 211, 211, 0.5);
+  width: 100%;
 }
 .suptext {
   margin-top: 20px;
+}
+.bottom-line {
+  border: 1px solid rgba(211, 211, 211, 0.5);
 }
 .fa-dollar-sign {
   width: 10%;
@@ -45,6 +50,11 @@ body {
   border-bottom-right-radius: 0;
   background: whitesmoke;
   text-align: center;
+
+  transition: 0.1s linear background-color;
+}
+.fa-dollar-sign:hover {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 .fa-male {
   width: 10%;
@@ -57,9 +67,15 @@ body {
   border-bottom-right-radius: 0;
   background: whitesmoke;
   text-align: center;
+
+  transition: 0.1s linear background-color;
+}
+.fa-male:hover {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 .sign {
   display: flex;
+  font-style: italic;
 }
 .dollar {
   box-sizing: border-box;
@@ -88,7 +104,7 @@ body {
   border-radius: 5px;
   border: 1px solid lightgray;
 
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .calc {
   padding: 8px;
@@ -103,4 +119,5 @@ body {
 
   border-top: 2px solid #e4e4e4;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
