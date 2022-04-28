@@ -122,7 +122,7 @@ body {
   margin-top: 20px;
 }
 .tip-amount {
-  visibility: auto;
+  opacity: 0;
   min-width: 250px;
   margin: auto;
   background: limegreen;
@@ -133,4 +133,24 @@ body {
   padding: 16px;
   position: fixed;
   z-index: 1;
+}
+
+.show {
+  animation-name: show;
+  animation-duration: 5s;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
