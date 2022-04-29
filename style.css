@@ -135,7 +135,7 @@ body {
   z-index: 1;
 }
 
-.show {
+.tip-amount.show {
   animation-name: show;
   animation-duration: 5s;
 }
